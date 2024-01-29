@@ -1,0 +1,26 @@
+
+.tree-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tree-table th, .tree-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.column-diameter {
+  width: 20%; 
+}
+
+.column-timestamp {
+  width: 30%;  
+}
+
+.column-status {
+  width: 20%;  
+}
+
+.column-treecount {
+  width: 20%; 
+}
