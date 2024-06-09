@@ -1,0 +1,138 @@
+.ag-grid{
+	text-align: left;
+    max-width: auto;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.ag-grid-container{
+  height: 500px;
+}
+
+::placeholder {
+	color: #d2d6d8 !important;
+	opacity: 1;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.ag-body-viewport {
+	border-bottom: 1px solid #babfc7;
+}
+
+.ag-header-row.ag-header-row-column {	
+	font-weight: 400;
+	.ag-header-cell:after {
+		background-color: #ced3d7;
+		content: "";
+		height: 20px;
+		margin-top: 8px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 1px;
+	}
+}
+
+.ag-header-row select {
+	border-color: var(--ag-input-border-color, var(--ag-border-color, #babfc7));
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	color: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	min-height: 24px;
+}
+
+.ag-row {
+	border-width: 0 !important;
+}
+
+.ag-row-even,
+.ag-row-odd {
+	background-color: white !important;
+}
+
+.ag-row-selected {
+	border-left: solid 2px #0D78AA !important;
+	background-color: #DBF4FB !important;
+}
+
+.ag-row-hover {
+	background-color: #EDF9FD !important;
+}
+
+.button-green {
+	background: #FFF;
+	border: 1px solid #388700;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #388700;
+	font-weight: 600;
+	margin: 0 3px;
+	padding: 4px 13px;
+}
+
+.button-red {
+	background: #FFF;
+	border: 1px solid #C10606;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #C10606;
+	font-weight: 600;
+	margin: 0 3px;
+	padding: 4px 13px;
+}
+
+.clearAll {
+	cursor: pointer;
+	display: table-cell;
+	font-weight: 400;
+	vertical-align: middle !important;
+}
+
+.clearAllContainer {
+	display: table;
+	height: 100%;
+	text-align: right;
+	width: 100%;
+}
+
+.divPagination {
+	background-color: #FFF;
+	border: 1px solid #babfc7;
+	border-top: 0;
+	margin: 0 !important;
+	padding: 8px 24px;
+}
+
+.labelPaginationPageSize {
+	color: #424747;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.noPad {
+	height: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+}
+
+.selectPaginationPageSize {
+	border: 0;
+	color: #0D78AA;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0 0 0 8px;
+}
+
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+	color: #d2d6d8 !important;
+}

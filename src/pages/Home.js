@@ -1,48 +1,21 @@
-import { useEffect, useState } from "react";
-import { ApiService } from "../services/services";
 import "./Home.css"
 
 export const Home = () => {
-    const [data, setData] = useState([]);
-    
-    const fetchData = async () => {
-        ApiService
-        .get()        
-        .then((response) => {
-            setData(response)
-        })
-    }
-
-    useEffect(() => {
-        fetchData()
-    }, []);    
-
     return(
         <>
-        <table className="tree-table">
-            <thead>
-                <tr>
-                    <th className="column-diameter">Tree Number</th>
-                    <th className="column-timestamp">Diameter</th>
-                    <th className="column-status">Timestamp</th>
-                    <th className="column-treecount">Status</th>
-                </tr> 
-            </thead>
-            <tbody>
-                {data.map((item, index) => (
-                    <tr key={index}>
-                        <td>{item.treecount}</td>
-                        <td>{item.diameter}</td>
-                        <td>{item.timestamp}</td>
-                        <td>{item.status}</td>
-                    </tr>
-                ))}
-            </tbody>
-               
-        </table> 
-        </>
-        
+            <div className="div-home">
+                <h1>
+                    Estatísticas da colheita do pinhão
+                </h1>
+            
+                <p>Esta pagina dá uma visão geral do colheita.</p>
+                <p>Os dados apresentados são:</p>
+                <p>A contagem de árvores,</p>
+                <p>O diametro da ávore,</p>
+                <p>A frequência de vibração aplicada,</p>
+                <p>O data e a hora da deteção</p>
+                <p>E o estado da operação</p>                
+            </div>  
+        </>              
     );
 }
-
-
