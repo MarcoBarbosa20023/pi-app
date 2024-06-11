@@ -1,18 +1,24 @@
-.div-stats{
+.div-stats {
   position: fixed;
-  margin-top: 3%;
-  text-align: left;
+  margin-top: 2%;
+  width: 100%;
   padding: 50px;
+  text-align: left;
+}
+
+.button-stats {
+  margin-bottom: 10px;
 }
 
 .date-picker-container {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  padding-top: 10px;
+  position: relative;
+  height: 50px; /* Adjust height to accommodate the button and date picker */
 }
 
 .custom-date-picker {
+  position: absolute;
+  top: 10px; /* Adjust according to your layout */
+  left: 0;
   width: 250px;
   padding: 10px;
   border: 1px solid #ced4da;
@@ -21,6 +27,7 @@
   outline: none;
   transition: border-color 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it is on top of other elements */
 }
 
 .custom-date-picker:focus {
@@ -28,9 +35,10 @@
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
 }
 
-.linechart-div{
-  margin-left: 30%;
-  margin-top: -5%;
+.linechart-div {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 1200px; /* Ensure this matches the width of your chart */
 }
 
 p {
@@ -39,5 +47,3 @@ p {
   margin: 10px 0;
   color: #555;
 }
-
-
