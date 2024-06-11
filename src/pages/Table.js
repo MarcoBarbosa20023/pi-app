@@ -33,12 +33,12 @@ export const Table = () => {
     const defaultColDef = {
         flex: 1,
     }
+    
     const fetchData = async () => {
         ApiService
         .get()        
         .then((response) => {
             setData(response)
-            console.log(response)
         })
     }
 
