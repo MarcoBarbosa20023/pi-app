@@ -80,8 +80,7 @@ export const Stats = () => {
     }
 
     return(
-        <>
-        
+        <>        
         <div className="div-stats">   
             <div className="button-stats">                
                 <button onClick={openCalendar}>Calendar</button>            
@@ -110,7 +109,7 @@ export const Stats = () => {
                     </LineChart>                   
                     :
                     <>
-                        <div>
+                        <div className="warning-noData-div">
                             <p>Sem dados para esta data.</p>
                         </div>
                         <LineChart width={1200} height={600} data={demoData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>

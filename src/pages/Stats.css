@@ -11,14 +11,11 @@
 }
 
 .date-picker-container {
-  position: relative;
-  height: 50px; /* Adjust height to accommodate the button and date picker */
+  position: fixed;
 }
 
 .custom-date-picker {
-  position: absolute;
-  top: 10px; /* Adjust according to your layout */
-  left: 0;
+  top: 10px; 
   width: 250px;
   padding: 10px;
   border: 1px solid #ced4da;
@@ -27,7 +24,7 @@
   outline: none;
   transition: border-color 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it is on top of other elements */
+  z-index: 1000; 
 }
 
 .custom-date-picker:focus {
@@ -38,12 +35,19 @@
 .linechart-div {
   margin: 0 auto;
   padding-top: 20px;
-  width: 1200px; /* Ensure this matches the width of your chart */
+  padding-left: 50px;
+  width: 60%; /* Ensure this matches the width of your chart */
+}
+
+.warning-noData-div {
+  position: fixed;  
+  margin: 10px 0;
+  margin-top: 32%;  
+  margin-left: 4%;
 }
 
 p {
+  color: red;
   font-size: 1.2em;
   line-height: 1.6;
-  margin: 10px 0;
-  color: #555;
 }
