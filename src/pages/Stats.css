@@ -2,12 +2,13 @@
   position: fixed;
   margin-top: 2%;
   width: 100%;
-  padding: 50px;
+  padding: 4%; /* Use relative padding */
   text-align: left;
+  overflow: scroll;
 }
 
 .button-stats {
-  margin-bottom: 10px;
+  margin-bottom: 1%; /* Use relative margin */
 }
 
 .date-picker-container {
@@ -15,12 +16,12 @@
 }
 
 .custom-date-picker {
-  top: 10px; 
-  width: 250px;
-  padding: 10px;
+  width: 80%; /* Use percentage width */
+  max-width: 300px; /* Max-width for larger screens */
+  padding: 1%; /* Use relative padding */
   border: 1px solid #ced4da;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem; /* Use rem for font size */
   outline: none;
   transition: border-color 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -34,20 +35,57 @@
 
 .linechart-div {
   margin: 0 auto;
-  padding-top: 20px;
-  padding-left: 50px;
-  width: 60%; /* Ensure this matches the width of your chart */
+  padding-left: 5%; /* Use relative padding */
+  width: 80%; /* Use percentage width */
+  max-width: 1200px; /* Max-width for larger screens */
+  z-index: 1000;
 }
 
 .warning-noData-div {
-  position: fixed;  
-  margin: 10px 0;
-  margin-top: 32%;  
+  margin: 2% 0;
   margin-left: 4%;
 }
 
 p {
-  color: red;
   font-size: 1.2em;
   line-height: 1.6;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .custom-date-picker {
+    width: 90%;
+  }
+
+  .linechart-div {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  .div-stats {
+    padding: 5%;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-date-picker {
+    width: 95%;
+  }
+
+  .linechart-div {
+    width: 95%;
+    padding-left: 3%;
+  }
+
+  .div-stats {
+    padding: 5%;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
 }

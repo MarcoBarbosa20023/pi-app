@@ -97,7 +97,7 @@ export const Stats = () => {
             <div className="linechart-div">
                 {Object.keys(chartData).length !== 0 ?
                                           
-                    <LineChart width={1200} height={600} data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                    <LineChart width={1000} height={500} data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                         <XAxis dataKey="treecount"> 
                             <Label value="Número de Pinheiros" offset={-5} position="insideBottom" />
                         </XAxis>
@@ -112,7 +112,7 @@ export const Stats = () => {
                         <div className="warning-noData-div">
                             <p>Sem dados para esta data.</p>
                         </div>
-                        <LineChart width={1200} height={600} data={demoData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                        <LineChart width={1000} height={500} data={demoData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                         <XAxis dataKey="itemId"> 
                             <Label value="Exemplo de X" offset={-5} position="insideBottom" />
                         </XAxis>
