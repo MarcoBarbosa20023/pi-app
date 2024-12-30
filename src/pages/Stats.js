@@ -98,8 +98,8 @@ export const Stats = () => {
                 {Object.keys(chartData).length !== 0 ?
                                           
                     <LineChart width={1000} height={500} data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-                        <XAxis dataKey="treecount"> 
-                            <Label value="Número de Pinheiros" offset={-5} position="insideBottom" />
+                        <XAxis dataKey="diameter"> 
+                            <Label value="Diâmetro do Pinheiro" offset={-5} position="insideBottom" />
                         </XAxis>
                         <YAxis dataKey="frequency"> 
                             <Label value="Frequência em Hertz" angle={-90} position="insideLeft" />  
